@@ -47,6 +47,7 @@ public class Turtle {
 
 	/**
 	 * moveForward changes the position of the turtle by the given distance
+	 * @param distance How far the turtle will move
 	 */
 	public void moveForward(int distance) {
 		int newX = (int) (xPos + distance * Math.cos(Math.toRadians(orientation)));
@@ -57,9 +58,8 @@ public class Turtle {
 			newX = Math.max(0, Math.min(newX, maxWidth - 1));
 		if (newY < 0)
 			newY = Math.max(0, Math.min(newY, maxHeight - 1));
-
-		System.out.println("moveForward " + xPos + ", " + yPos + ", " + newX + ", " + newY);
-		if (!penUp) {
+		
+		if (!penUp) { // if pen is not up or you can say the pen is down
 			moves.add(new TurtleMove(xPos, yPos, newX, newY, color));
 		}
 		xPos = newX;
@@ -97,10 +97,6 @@ public class Turtle {
 		for (TurtleMove move : moves) {
 			g.setColor(move.getColour());
 			g.drawLine(move.getX1(), move.getY1(), move.getX2(), move.getY2());
-			// System.out.println("draw a new line " + move.getX1() + " "+ move.getY1() + ",
-			// " + move.getX2() + ", " + move.getY2());
 		}
-//        System.out.println("draw a new turtle " + xPos + ", " + yPos);
-
 	}
 }
