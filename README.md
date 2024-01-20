@@ -13,7 +13,7 @@ left name x - rotate the turtle anticlockwise by x degrees<br>
 right name x - rotate the turtle clockwise by x degrees<br>
 pen name up - lift the pen off the “paper”<br>
 pen name down - put the pen down so that subsequent moves draw on the screen<br>
-colour name c - set the drawing colour of the turtle appropriately<br>
+colour name c - set the drawing colour of the turtle appropriately. Four colours (green, red, blue, black) can be used.<br>
 
 **An example**<br>
 turtle ann<br>
