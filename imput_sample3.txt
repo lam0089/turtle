@@ -1,0 +1,10 @@
+turtle aa
+move aa 50
+pen aa up
+move aa 50
+pen aa down
+move aa 50
+colour aa blue
+move aa 50
+left aa 90
+move aa 50

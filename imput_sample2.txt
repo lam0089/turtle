@@ -1,0 +1,21 @@
+turtle tom
+colour tom green
+move tom 150
+left tom 90
+move tom 150
+left tom 90
+move tom 50
+left tom 90
+move tom 50
+turtle sam
+colour sam red
+move sam 150
+right sam 90
+move sam 150
+right sam 90
+move sam 50
+right sam 90
+move sam 50
+turtle lily
+colour lily green
+move lily 250
