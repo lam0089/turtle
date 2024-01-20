@@ -2,7 +2,7 @@
 Turtle Graphics program in Java
 ================================
 
-You need to create a turtle with a name before moving the turtle. There are two options to run turtle graphic:<br>
+You need to create a turtle with a name before moving the turtle. There are two options to run turtle graphics:<br>
 (1) Type the commands in the textfield and press Enter. You can use the following language commands to control the turtles.<br>
 (2) Click 'Search' to select a local file which contains a list of command. Then click 'Execute' to run the commands.<br>
 
