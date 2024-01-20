@@ -37,4 +37,5 @@ colour pete red<br>
 move pete 40<br>
 
 
-The program has been tested in the Eclipse Version: 2020-03 (4.15.0). Make sure Java version should be at least "13.0.2".
+The program has been tested in the Eclipse Version: 2020-03 (4.15.0) and Visual Studio Code Version: 1.85.1.<br>
+Make sure Java version should be at least "13.0.2".<br>
