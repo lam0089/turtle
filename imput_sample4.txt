@@ -1,19 +1,28 @@
-turtle ann
-move ann 50
-left ann 90
-move ann 60
-left ann 90
-colour ann green
-move ann 70
-left ann 90
-move ann 80
-turtle pete
-right pete 90
-move pete 60
-right pete 90
-move pete 70
-pen pete up
-move pete 70
-pen pete down
-colour pete red
-move pete 40
+# The turtle Lolo draws a red rectangle
+turtle lolo
+colour lolo red
+Pen lolo up
+move lolo 90
+Right lolo 90
+Pen lolo down
+move lolo 50
+left lolo 90
+move lolo 50
+left lolo 90
+move lolo 50
+left lolo 90
+move lolo 50
+# The turtle lili draws a green rectangle
+turtle lili
+colour lili green
+Pen lili up
+move lili 220
+Left lili 90
+Pen lili down
+move lili 50
+left lili 90
+move lili 50
+left lili 90
+move lili 50
+left lili 90
+move lili 50
