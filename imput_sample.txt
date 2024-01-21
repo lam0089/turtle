@@ -1,4 +1,4 @@
-# The turtle Tom draws a red rectangle
+# Turtle Tim draws a red rectangle
 turtle tim
 colour tim red
 move tim 50
