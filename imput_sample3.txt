@@ -1,10 +1,38 @@
+# turtle aa draws a star
 turtle aa
-move aa 50
 pen aa up
-move aa 50
+move aa 150
+right aa 110
 pen aa down
 move aa 50
 colour aa blue
+left aa 144
 move aa 50
-left aa 90
+left aa 144
 move aa 50
+left aa 144
+colour aa green
+move aa 50
+left aa 144
+move aa 50
+# turtle bb draws a octagon
+turtle bb
+Pen bb up
+right bb 180
+Pen bb down
+move bb 50
+left bb 45
+move bb 50
+left bb 45
+move bb 50
+left bb 45
+move bb 50
+left bb 45
+move bb 50
+left bb 45
+move bb 50
+left bb 45
+move bb 50
+left bb 45
+move bb 50
+left bb 45

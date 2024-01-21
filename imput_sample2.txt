@@ -1,21 +1,30 @@
+# Turtle Tom draws a green pentagon
 turtle tom
 colour tom green
 move tom 150
-left tom 90
+left tom 72
 move tom 150
-left tom 90
-move tom 50
-left tom 90
-move tom 50
+left tom 72
+move tom 150
+left tom 72
+move tom 150
+left tom 72
+move tom 150
+# Turtle Sam draws a red hexagon
 turtle sam
 colour sam red
-move sam 150
-right sam 90
-move sam 150
-right sam 90
+pen sam up
+move sam 250
+pen sam down
+right sam 60
 move sam 50
-right sam 90
+right sam 60
 move sam 50
-turtle lily
-colour lily green
-move lily 250
+right sam 60
+move sam 50
+right sam 60
+move sam 50
+right sam 60
+move sam 50
+right sam 60
+move sam 50

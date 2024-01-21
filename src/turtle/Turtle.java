@@ -5,8 +5,10 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 
 /**
- * Turtle class contains the x- and y- positions, colour, moves and pen up/down
- * 
+ * Turtle is shown as a small circle. 
+ * Each turtle has a name. Its default position is at the centre of the frame and facing north.
+ * Each turtle moves when there is a command. If the pen is down, it leaves a trail. The colour of trails can be changed.
+ * Each turtle can only move within the range of the frame.
  * @author Lam
  *
  */
@@ -40,8 +42,11 @@ public class Turtle {
 		orientation = 90; // Facing north by default
 
 	}
-
-	public void rotateAnticlockwise(int degree) {
+	/**
+	 * the turtle rotates given an input degree
+	 * @param degree The degree the turtle rotates.
+	 */
+	public void rotateTurtle(int degree) {
 		orientation = (orientation - degree + 360) % 360; // in case the orientation-degree is minus degree
 	}
 
@@ -54,10 +59,12 @@ public class Turtle {
 		int newY = (int) (yPos - distance * Math.sin(Math.toRadians(orientation)));
 
 		// Ensure the new position is within the panel boundaries
-		if (newX < 0)
+		if (newX < 0) {
 			newX = Math.max(0, Math.min(newX, maxWidth - 1));
-		if (newY < 0)
+		}
+		if (newY < 0) {
 			newY = Math.max(0, Math.min(newY, maxHeight - 1));
+		}
 		
 		if (!penUp) { // if pen is not up or you can say the pen is down
 			moves.add(new TurtleMove(xPos, yPos, newX, newY, color));
@@ -87,13 +94,13 @@ public class Turtle {
 	}
 
 	/**
-	 * draw the lines moved by the turtle
+	 * Display the turtle as a small circle and draw the trails moved by the turtle
 	 * 
-	 * @param g
+	 * @param g The graphics in which the turtle is displayed
 	 */
 	public void draw(Graphics g) {
 
-		g.fillOval(xPos, yPos, 3, 3);
+		g.fillOval(xPos, yPos, 3, 3); // display a turtle as a small circle
 		for (TurtleMove move : moves) {
 			g.setColor(move.getColour());
 			g.drawLine(move.getX1(), move.getY1(), move.getX2(), move.getY2());
